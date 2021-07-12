@@ -302,25 +302,6 @@ h3{
 /* приглашение */
 .invitation{
     margin: 7rem 0;
-    /* width: 70%; */
-    height: 100vh;
-
-    font-weight: bold;
-    color: #575656;
-    background: #FFF;
-
-    padding: 7rem 15rem;
-    background: url('https://img5.goodfon.ru/original/1280x1024/8/30/eustoma-tsvety-rozovyi-belyi.jpg') center center no-repeat;
-    background: url('https://img5.goodfon.ru/original/1600x1025/d/1c/belyi-fon-eustoma-buket.jpg');
-    /* background: url('https://img5.goodfon.ru/original/2880x1800/2/a4/pink-flowers-tsvety-eustoma.jpg') center center no-repeat; */
-    background-size: cover;
-
-    box-shadow: 0 0 30px 0 rgb(0 0 0 / 20%);
-    z-index: 2;
-}
-
-.invitation2{
-    margin: 7rem 0;
     padding: 0 15rem;
     height: 100vh;
 
@@ -339,7 +320,6 @@ h3{
     justify-content: center;
     align-items: center;
 }
-.invitation2 p,
 .invitation p{
     margin-top: 3rem;
     width: 50%;
