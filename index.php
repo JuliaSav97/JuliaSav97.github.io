@@ -1,5 +1,28 @@
+<? if($_POST["submit"]) 
+{ 
+    $firstName = $_POST['firstName'];
+    $lastName = $_POST['lastName'];
+
+    $firstName = htmlspecialchars($firstName);
+    $lastName = htmlspecialchars($lastName);
+
+    $firstName = urldecode($firstName);
+    $lastName = urldecode($lastName);
+
+    $firstName = trim($firstName);
+    $lastName = trim($lastName);
+
+    echo $fifirstNameo;
+    echo "<br>";
+    echo $lastName;
+    if (mail("july_ss@mail.ru", "Заявка с сайта", "ФИО:".$firstName.". E-mail: ".$lastName ,"From: july.ss0206@gmail.com \r\n"))
+    {     echo "сообщение успешно отправлено";
+    } else {
+        echo "при отправке сообщения возникли ошибки";
+    }
+}?>
 <!DOCTYPE html>
-<html>
+<html  lang="ru">
     <head>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <!-- <link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Montserrat:wght@100&display=swap" rel="stylesheet"> -->
@@ -123,7 +146,7 @@
             </section>
 
             <section class="form_data">
-                <form action="send.php" method="POST">
+                <form method="POST">
                     <div class="come_block">
                         <input type="radio" name="come" id="come" value="я_приду">
                         <label for="come">
@@ -205,7 +228,8 @@
 
                     </div>
 
-                    <button type="submit"> Подтвердить </button>
+                    <input type="submit" name="submit" value="ertyuiop;lkjhgvbhnjmk,"> 
+                    <!-- Подтвердить </button> -->
                 </form>
             </section>
             
