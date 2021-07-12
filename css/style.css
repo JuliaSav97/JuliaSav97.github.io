@@ -1,0 +1,361 @@
+.color_0,
+.color_1,
+.color_2,
+.color_3,
+.color_4,
+.color_5,
+.color_6{
+    /* width: 10rem;
+    height: 10rem; */
+    /* margin: 3rem; */
+}
+.color_0{
+    /* зеленый  */
+    background: #DED7CD;
+}
+.color_1{
+    /* зеленый  */
+    background: #9AA68E;
+}
+.color_2{
+    /* желтый */
+    background: #CDB6A6;
+}
+.color_3{
+    /* коричневый */
+    background: hsl(24deg 38% 39%);
+}
+.color_4{
+    /* бордовый */
+    background: #803B54;
+}
+.color_5{
+    /* розовый */
+    background: #A57F81;
+}
+.color_6{
+    background: #707070;
+}
+
+html, body, div, span, iframe,
+h1, h2, h3, h4, h5, h6, p, a, img, ol, ul, li, form, label,
+article, figure, footer, header, nav, section, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    /* font-size: 100%; */
+    font: inherit;
+    vertical-align: baseline;
+}
+html{
+    font-family: 'Poiret One';
+    font-size: 1vw;
+}
+article, figure, footer, header, nav, section {
+    display: block;
+}
+ol, ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    outline: none;
+}
+.header-wrapper{
+    background: url('../img/fon.jpg') center center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 120vh;
+    position: relative;
+    z-index: -1;
+}
+.header-wrapper:after{
+    content: '';
+    width: 100%;
+    height: 120vh;
+    /* background: rgb(47 47 47 / 41%); */
+    background: rgb(127 106 117 / 41%);
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2rem 5rem;
+    z-index: 1;
+}
+nav a{
+    margin-left: 4rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 114%;
+    letter-spacing: 2px;
+    text-shadow: rgb(87, 87, 87) 1px 1px 0;
+    text-transform: uppercase;
+    color: #fff;
+}
+.main_content{
+    width: 80%;
+    margin: 20vh auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: rgb(87, 87, 87) 1px 1px 0;
+    color: #fff;
+    z-index: 1;
+    position: relative;
+}
+/* .main_content:before{
+    content: '';
+    position: absolute;
+    width: 12rem;
+    height: 31rem;
+    border: 1.5rem solid #ffca7c6b;
+    border-right: 0;
+    top: -6rem;
+    left: -1rem;
+} */
+h1{
+    font-family: 'Poiret One';
+    font-size: 8rem;
+}
+.main_content h3{
+    margin-top: 1rem;
+    font-size: 3rem;
+}
+#current_date_time_block{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+#current_date_time_block div{
+    margin-left: 2rem;
+    text-align: center;
+}
+#current_date_time_block div:first-child{
+    margin-left: 0;
+}
+
+/* о нас */
+.about_us{
+    position: relative;
+    /* min-height: 50rem; */
+    padding: 10rem 15rem;
+    background: url('https://img5.goodfon.ru/original/1280x1024/8/30/eustoma-tsvety-rozovyi-belyi.jpg') center center no-repeat;
+    background: url('https://img5.goodfon.ru/original/1600x1025/d/1c/belyi-fon-eustoma-buket.jpg');
+    background: url('https://img5.goodfon.ru/original/2880x1800/2/a4/pink-flowers-tsvety-eustoma.jpg') center center no-repeat;
+    /* background: url('https://img5.goodfon.ru/wallpaper/original/2/a4/pink-flowers-tsvety-eustoma.jpg'); */
+    background-size: cover;
+}
+/* .about_us:before{
+    content: '';
+    width: 100%;
+    height: 8rem;
+    position: absolute;
+    height: 50rem;
+    filter: blur(-2rem);
+    background: rgb(255 233 215 / 45%);
+} */
+/* .about_us:after{
+    content: '';
+    width: 100%;
+    height: 7rem;
+    position: absolute;
+    bottom: -4rem;
+    filter: blur(1.5rem);
+    background: #ffffff;
+} */
+
+.about_us_block{
+    /* margin: -15vh auto 0 auto; */
+    padding: 5rem;
+    /* width: 60%; */
+    /* min-height: 30rem; */
+    /* position: absolute; */
+    top: 10rem;
+    left: 15rem;
+    right: 15rem;
+
+    display: flex;
+    justify-content: space-between;
+
+    background: #FFF;
+    box-shadow: 0 0 30px 0 rgb(0 0 0 / 20%);
+    z-index: 3;
+}
+.individually_description{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.individually_description img{
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.individually_description p{
+    padding-top: 3rem;
+    font-weight: bold;
+    font-size: 3.5rem;
+    color: #b15b84;
+}
+
+
+h3{
+    font-weight: bold;
+    font-size: 3rem;
+}
+.programm{
+    margin: 7rem auto 0 auto;
+    width: 70%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #575656;
+}
+.programm:before{
+    content: ' ';
+    position: absolute;
+    width: 57%;
+    height: .5rem;
+    top: 1.2rem;
+    left: -15rem;
+    background: #eca6dd;
+}
+.programm_block{
+    display: flex;
+    align-items: center;
+    padding-top: 5rem;
+}
+.programm_date{
+    margin-right: 2rem;
+}
+.programm_text{
+    margin-left: 2rem;
+}
+
+.programm_date p:last-child{
+    font-weight: bold;
+    font-size: 2.27rem;
+    color: #f17fd9;
+    /* color: #d383dc; */
+}
+.programm_date p:first-child{
+    font-weight: bold;
+    font-size: 1rem;
+    color: #7c7c7c;
+}
+.programm_text p:first-child{
+    font-size: 2.27rem;
+    color: #333333;
+}
+.programm_text  p:last-child{
+    font-weight: bold;
+    font-size: 1rem;
+    color: #333333;
+}
+
+.programm_point{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    /* background: #f17fd9; */
+    background: #a7ca95;
+    position: relative;
+}
+.programm_point:after{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: calc(50% - .035rem);
+    width: .07rem;
+    height: 7rem;
+    background: #7c7c7c7c;
+}
+
+
+.programm_block:first-child .programm_date{
+    color: #a2398de0;
+}
+.programm_block:first-child .programm_point{
+    background: #a2398de0;
+}
+.programm_block:last-child .programm_date{
+    color: #f3b8e6;
+}
+.programm_block:last-child .programm_point{
+    /* background: #f3b8e6; */
+    background: #afaba1;
+}
+.programm_block:last-child .programm_point:after{
+    display: none;
+}
+
+
+/* приглашение */
+.invitation{
+    margin: 7rem 0;
+    /* width: 70%; */
+    height: 100vh;
+
+    font-weight: bold;
+    color: #575656;
+    background: #FFF;
+
+    padding: 7rem 15rem;
+    background: url('https://img5.goodfon.ru/original/1280x1024/8/30/eustoma-tsvety-rozovyi-belyi.jpg') center center no-repeat;
+    background: url('https://img5.goodfon.ru/original/1600x1025/d/1c/belyi-fon-eustoma-buket.jpg');
+    /* background: url('https://img5.goodfon.ru/original/2880x1800/2/a4/pink-flowers-tsvety-eustoma.jpg') center center no-repeat; */
+    background-size: cover;
+
+    box-shadow: 0 0 30px 0 rgb(0 0 0 / 20%);
+    z-index: 2;
+}
+
+.invitation2{
+    margin: 7rem 0;
+    padding: 0 15rem;
+    height: 100vh;
+
+    font-weight: bold;
+    color: #575656;
+    text-align: center;
+    
+    background: url('https://img5.goodfon.ru/original/1280x1024/8/30/eustoma-tsvety-rozovyi-belyi.jpg') center center no-repeat;
+    /* background: url('https://img5.goodfon.ru/original/1600x1025/d/1c/belyi-fon-eustoma-buket.jpg'); */
+    /* background: url('https://img5.goodfon.ru/original/2880x1800/2/a4/pink-flowers-tsvety-eustoma.jpg') center center no-repeat; */
+    background-size: cover;
+    box-shadow: 0 0 30px 0 rgb(0 0 0 / 20%);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.invitation2 p,
+.invitation p{
+    margin-top: 3rem;
+    width: 50%;
+    font-size: 1.5rem;
+}
+.block_color{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 40%;
+    margin-top: 1.5rem;
+}
+.block_color div{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    margin: .5rem;
+    border: .01rem solid #cacaca;
+}
