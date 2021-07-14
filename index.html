@@ -2,102 +2,39 @@
 <html  lang="ru">
     <head>
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <!-- <link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Montserrat:wght@100&display=swap" rel="stylesheet"> -->
         <link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Poiret+One&family=Josefin+Slab&family=Raleway:wght@100&display=swap" rel="stylesheet">
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <title>Приглашение</title>
-        <script src="scripts/script.js"></script>
+        <link rel="icon" href="img/icon.svg" type="image/x-icon">
         <link rel="stylesheet" type="text/css" href="css/style.css" />
         <link rel="stylesheet" type="text/css" href="css/inputStyle.css">
+        <link rel="stylesheet" type="text/css" href="css/mobile.css">
+        <script src="js/script.js"></script>
         
     </head>
     <body>
-        <!-- <section class="color_block">
-            <div class="color_0"></div>
-            <div class="color_2"></div>
-            <div class="color_5"></div>
-            <div class="color_4"></div>
-            <div class="color_3"></div>
-            <div class="color_1"></div>
-            <div class="color_6"></div>
-        </section> -->
         <main>
             <section class="header-wrapper">
-                <nav>
-                    <a href="">О нас</a>
-                    <a href="">Программа</a>
-                    <a href="">Приглашение</a>
-                    <a href="">Фото</a>
-                    <a href="">Как добраться</a>
-                </nav>
+                <header>
+                    <nav>
+                        <!-- <a href="#about_us">О нас</a> -->
+                        <a href="#invitation">Приглашение</a>
+                        <a href="#programm">Где И Когда</a>
+                        <!-- <a href="#photo">Фото</a> -->
+                        <a href="#map">Как добраться</a>
+                    </nav>
+                </header>
                 <div class="main_content">
                     <h1>Юлия & Александр</h1>
-                    <h3>наша свадьба состоится 14 августа 2021 г.</h3>
+                    <h4>наша свадьба состоится 14 августа 2021 г.</h4>
                     <div class="time_block">
                         <div id="current_date_time_block"></div>
                     </div>
                 </div>
-            </section>
-            <section class="about_us">
-                <div class="about_us_block">
-                    <div class="individually_description">
-                        <img src="img/alex2.png" alt="">
-                        <p>Юлия</p>
-                    </div>
-                    <div class="individually_description">
-                        <img src="img/alex3.png" alt="">
-                        <p>Александр</p>
-                    </div>
-                </div>
-                <!-- <img src="img/background1.jpg" alt=""> -->
-            </section>
+            </section>         
 
-            <section class="programm">
-                <h3>Программа</h3>
-                <div>
-                    <div class="programm_block">
-                        <div class="programm_date">
-                            <p>12 августа 2021</p>
-                            <p> 11:40 </p>
-                        </div>
-                        
-                        <div class="programm_point"></div>
-                        <div class="programm_text">
-                            <p> Регистрация в ЗАГСе </p>
-                            <p> ул. Космонавтов, 2</p>
-                        </div>
-                    </div>
-
-                    <div class="programm_block">
-                        <div class="programm_date">
-                            <p>14 августа 2021</p>
-                            <p> 16:00 </p>
-                        </div>
-                        
-                        <div class="programm_point"></div>
-                        <div class="programm_text">
-                            <p> Выездная церемония </p>
-                            <p> ул. Неделина, 15В, р. Антонио</p>
-                        </div>
-                    </div>
-
-                    <div class="programm_block">
-                        <div class="programm_date">
-                            <p>14 августа 2021</p>
-                            <p> 17:00 </p>
-                        </div>
-                        
-                        <div class="programm_point"></div>
-                        <div class="programm_text">
-                            <p> Банкет </p>
-                            <p> ул. Неделина, 15В, р. Антонио</p>
-                        </div>
-                    </div>
-                    
-                </div>
-            </section>
-
-            <section class="invitation">
+            <section class="invitation" id="invitation">
                 <h3>Приглашение</h3>
                 <p>
                     Мы рады сообщить Вам, что 14.08.2021 состоится самое главное торжество в нашей жизни - день нашей свадьбы!
@@ -113,24 +50,60 @@
                 <div class="block_color">
                     <div class="color_0"></div>
                     <div class="color_2"></div>
+
                     <div class="color_5"></div>
                     <div class="color_7"></div>
                     <div class="color_4"></div>
-                    <div class="color_3"></div>
+                    
+
+                    <div class="color_8"></div>
+                    
                     <div class="color_1"></div>
                     <div class="color_6"></div>
+                    <div class="color_3"></div>
                 </div>
             </section>
 
+
+            <section class="programm" id="programm">
+                <h3>Где И Когда</h3>
+                <div class="programm_main">
+
+                    <div class="programm_block">
+                        <img src="img/ceremony.jpg" alt="">
+                        <div>
+                            <h6>Выездная Регистрация</h6>
+                            <p>
+                                Суббота, 14 августа 2021 <br> в 16:00 - 17:00 <br> ресторан "Антонио" <br> г. Липецк, ул. Неделина, 15В
+                            </p>
+                        </div>
+                    </div>
+                    <div class="programm_block">
+                        <img src="img/banquet.jpg" alt="">
+                        <div>
+                            <h6>Банкет</h6>
+                            <p>
+                                Суббота, 14 августа 2021 <br> в 17:00 - 22:00 <br> ресторан "Антонио" <br> г. Липецк, ул. Неделина, 15В
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+
             <section class="form_data">
                 <form action="send.php" method="POST">
+                    <h3>Вы Придете?</h3>
+                    
                     <div class="come_block">
-                        <input type="radio" name="come" id="come" value="я_приду">
+                        <input type="radio" name="come" id="come" value="Я приду" checked>
                         <label for="come">
                             Конечно, мы будем!
                         </label>
 
-                        <input type="radio"  name="come" id="notСome" value="я_не_приду">
+                        <input type="radio"  name="come" id="notСome" value="Я не приду">
                         <label for="notСome">
                             Мы не придем
                         </label>
@@ -143,7 +116,7 @@
                         <div class="question">
                             <p>Есть ли у вас особые предпочтения по еде?</p>
                             <div class="radio_block">
-                                <input id="food1" type="radio" name="food" value="нет">
+                                <input id="food1" type="radio" name="food" value="нет" checked>
                                 <label for="food1" class="radio_button"> Нет </label>
                             </div>
                             <div class="radio_block">
@@ -160,57 +133,75 @@
                             </div>
                         </div>
 
-                        <div class="question">
+                        <div class="question question_last">
                             <p> Какой алкоголь вы предпочитаете?</p>
                             <div class="radio_block">
-                                <input id="alcohol1" type="radio" name="not_alcohol">
+                                <input id="alcohol1" type="checkbox" name="not_alcohol">
                                 <label for="alcohol1" class="radio_button"> Не буду пить алкоголь </label>
                             </div>
                             <div class="radio_block">
-                                <input id="alcohol2" type="radio" name="champagne">
+                                <input id="alcohol2" type="checkbox" name="champagne">
                                 <label for="alcohol2" class="radio_button"> Шампанское</label>
                             </div>
                             <div class="radio_block">
-                                <input id="alcohol3" type="radio" name="Wine">
+                                <input id="alcohol3" type="checkbox" name="Wine">
                                 <label for="alcohol3" class="radio_button"> Вино </label>
                             </div>
                             <div class="radio_block">
-                                <input id="alcohol6" type="radio" name="Cocktails">
+                                <input id="alcohol6" type="checkbox" name="Cocktails">
                                 <label for="alcohol6" class="radio_button"> Коктейли </label>
                             </div>
                             <div class="radio_block">
-                                <input id="alcohol4" type="radio" name="Whiskey_cognac">
+                                <input id="alcohol4" type="checkbox" name="Whiskey_cognac">
                                 <label for="alcohol4" class="radio_button"> Виски/коньяк </label>
                             </div>
                             <div class="radio_block">
-                                <input id="alcohol5" type="radio" name="Vodka">
+                                <input id="alcohol5" type="checkbox" name="Vodka">
                                 <label for="alcohol5" class="radio_button"> Водка </label>
                             </div>
                         </div>
-                        <div class="__select" data-state="Я буду один">
-                            <div class="__select__title" data-default="Я буду один"> Я буду один </div>
+                        
+                      <div class="__select" data-state="">
+                            <div class="__select__title" data-default=""> Я буду один </div>
                             <div class="__select__content">
-                                <input id="singleSelect0" class="__select__input" type="radio" name="singleSelect" checked />
+                                <input id="singleSelect0" class="__select__input" type="checkbox" 
+                                    name="singleSelect" value="Я буду один" checked />
                                 <label for="singleSelect0" class="__select__label"> Я буду один </label>
-                                <input id="singleSelect1" class="__select__input" type="radio" name="singleSelect" />
+                                <input id="singleSelect1" class="__select__input" type="checkbox" 
+                                    name="singleSelect" value="Один гость"/>
                                 <label for="singleSelect1" class="__select__label"> Один гость </label>
-                                <input id="singleSelect2" class="__select__input" type="radio" name="singleSelect"/>
-                                <label for="singleSelect2" class="__select__label"> Два гость </label>
-                                <input id="singleSelect3" class="__select__input" type="radio" name="singleSelect" />
-                                <label for="singleSelect3" class="__select__label"> Три гость </label>
-                                <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
-                                <label for="singleSelect4" class="__select__label"> Четыре гость </label>
+                                <input id="singleSelect2" class="__select__input" type="checkbox" 
+                                    name="singleSelect" value="Два гостя"/>
+                                <label for="singleSelect2" class="__select__label"> Два гостя </label>
+                                <input id="singleSelect3" class="__select__input" type="checkbox" 
+                                    name="singleSelect" value="Три гостя"/>
+                                <label for="singleSelect3" class="__select__label"> Три гостя </label>
+                                <input id="singleSelect4" class="__select__input" type="checkbox" 
+                                    name="singleSelect" value="Четыре гостя"/>
+                                <label for="singleSelect4" class="__select__label"> Четыре гостя </label>
                             </div>
                         </div>
 
+                        <textarea name="description" id="description" cols="30" rows="10" placeholder="Здесь вы можете написать сообщение..."></textarea>
                     </div>
-
-                    <input type="submit" name="submit" value="ertyuiop;lkjhgvbhnjmk,"> 
-                    <!-- Подтвердить </button> -->
+                    <button type="submit" name="submit"> Подтвердить </button>
                 </form>
             </section>
+
+            <section class="map" id="map">
+                <h3>Как добраться</h3>
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A8ad1779b45b9186c213c1731d924df760dfb3760a7912b79487e0f5b34c2b1b7&amp;source=constructor" width="100%" height="618" frameborder="0"></iframe>
+            </section>
+
+            <footer>
+                <p> © 2021 Мы женимся! </p>
+                
+                <svg id="Capa_1" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="256" x2="256" y1="512" y2="0"><stop offset="0" stop-color="#fd3a84"/><stop offset="1" stop-color="#ffa68d"/></linearGradient><g><g><path d="m256 0c-140.959 0-256 115.049-256 256 0 140.959 115.049 256 256 256 140.959 0 256-115.05 256-256 0-140.959-115.049-256-256-256zm0 482c-124.617 0-226-101.383-226-226s101.383-226 226-226 226 101.383 226 226-101.383 226-226 226zm75-361c-32.923 0-58.18 18.506-75 46.058-16.817-27.547-42.072-46.058-75-46.058-53.252 0-90 45.908-90 99.545 0 64.594 57.624 110.966 116.19 162.298 12.376 10.848 25.174 22.065 38.775 34.306 2.853 2.568 6.444 3.851 10.035 3.851s7.182-1.283 10.035-3.851c13.601-12.241 26.398-23.458 38.775-34.306 63.286-55.469 116.19-99.611 116.19-162.298 0-53.739-36.839-99.545-90-99.545zm-45.964 239.283c-9.375 8.216-18.988 16.643-29.036 25.587-10.047-8.944-19.661-17.371-29.036-25.587-66.079-57.918-105.964-92.877-105.964-139.738 0-39.647 25.794-69.545 60-69.545 32.707 0 53.643 31.628 60.516 56.399 1.763 6.548 7.701 11.101 14.484 11.101 6.796 0 12.743-4.569 14.494-11.135.15-.564 15.55-56.365 60.506-56.365 34.206 0 60 29.898 60 69.545 0 46.861-39.885 81.82-105.964 139.738z" fill="url(#SVGID_1_)"/></g></g></svg>
+
+                <a href="tel:+79042951663">+7 (904) 295-16-63</a>
+            </footer>
             
         </main>
-        <script src="scripts/select.js"></script>
+        <script src="js/select.js"></script>
     </body>
 </html>

@@ -1,0 +1,134 @@
+@media screen and (max-width: 768px) {
+    html{
+        font-size: 2vw;
+    }
+    nav{
+        justify-content: center;
+        padding: 2rem 1rem;
+    }
+    nav a{
+        margin: 0 2rem;
+    }
+    h1{
+        font-size: 6rem;
+    }
+
+    .invitation{
+        padding: 5rem;
+    }
+    .invitation h3{
+        margin-top: 7rem;
+    }
+    .invitation p{
+        width: 80%;
+    }
+
+    .programm_block {
+        margin: 1rem 1.5rem;
+    }
+    .programm_block img {
+        height: 14rem;
+    }
+    .programm_block div {
+        padding: 2rem;
+    }
+    .programm_main {
+        width: 95%;
+        margin-top: 1.5rem;
+    }
+
+    .form_data{
+        background: url('../img/form_img.jpg') 16% center no-repeat;
+    }
+    .block_form_edit {
+        width: 89%;
+    }
+}
+@media screen and (max-width: 500px) {
+    html{
+        font-size: 3.6vw;
+    }
+    .main_content{
+        width: 90%;
+        padding-top: 20vh;
+        margin-top: 0;
+    }
+    header{
+        display: none;
+    }
+    h1 {
+        font-size: 5rem;
+    }
+    .main_content h4{
+        font-size: 2.3rem;
+    }
+
+
+    .invitation {
+        padding: 3rem;
+        background: url('../img/flowers2.jpg') center center no-repeat;
+        background-size: cover;
+        text-shadow: #ffffff -1px 1px 2px;
+    }
+    .invitation h3 {
+        margin-top: 5rem;
+    }
+    .invitation p {
+        width: 100%;
+    }
+    .programm_main{
+        width: auto;
+        margin: 0 1rem;
+        flex-direction: column;
+        /* padding: 0 2rem; */
+    }
+    .programm_block{
+        margin: 1rem 0;
+    }
+    
+    .form_data{
+        width: auto;
+        padding: 4rem 1rem;
+    }
+    .come_block{
+        margin: 5rem -.5rem 0 -.5rem;
+    }
+    .come_block label {
+        width: 12rem;
+        margin: 0 .5rem;
+    }
+    .block_form_edit {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .input_name, textarea{
+        width: calc(100% - 2.4rem);
+    }
+    .question{
+        display: flex;
+        flex-direction: column;
+    }    
+    .question, .input_name {
+        margin: 3rem 0 0 0;
+    }
+    .question .radio_block{
+        margin-left: 5.4rem;
+    }
+    .question_last .radio_block{
+        margin-left: 1rem;
+    }
+    .radio_block label {
+        width: auto;
+    }
+    .__select__title{
+        width: 22.8rem;
+    }
+    footer{
+        padding: 1rem;
+        justify-content: space-between;
+    }
+    svg{
+        display: none;
+    }
+}

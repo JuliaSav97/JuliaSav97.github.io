@@ -12,7 +12,7 @@
 }
 .color_3{
     /* коричневый */
-    background: hsl(24deg 38% 39%);
+    background: #A26B54;
 }
 .color_4{
     /* бордовый */
@@ -28,8 +28,15 @@
 }
 .color_7{
     /* розовый 2 */
-    background: rgb(195 102 136);
+    background: rgb(195 111 141);
 }
+.color_8{
+    background: #C1BDA2;
+}
+.color_9{
+    background: #db997c;
+}
+
 
 html, body, div, span, iframe,
 h1, h2, h3, h4, h5, h6, p, a, img, ol, ul, li, form, label,
@@ -56,22 +63,10 @@ a , input{
     outline: none;
 }
 .header-wrapper{
-    background: url('../img/fon.jpg') center center no-repeat;
+    background: url('../img/main.jpg') center center no-repeat;
     background-size: cover;
     width: 100%;
-    height: 120vh;
-    position: relative;
-    z-index: -1;
-}
-.header-wrapper:after{
-    content: '';
-    width: 100%;
-    height: 120vh;
-    /* background: rgb(47 47 47 / 41%); */
-    background: rgb(127 106 117 / 41%);
-    position: absolute;
-    top: 0;
-    z-index: -1;
+    min-height: 100vh;
 }
 nav{
     display: flex;
@@ -85,14 +80,16 @@ nav a{
     font-weight: bold;
     font-size: 1.5rem;
     line-height: 114%;
-    letter-spacing: 2px;
+    letter-spacing: .14rem;
     text-shadow: rgb(87, 87, 87) 1px 1px 0;
     text-transform: uppercase;
     color: #fff;
+    cursor: pointer;
 }
 .main_content{
     width: 80%;
     margin: 20vh auto 0 auto;
+    padding-bottom: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -102,22 +99,13 @@ nav a{
     color: #fff;
     z-index: 1;
     position: relative;
+    cursor: default;
 }
-/* .main_content:before{
-    content: '';
-    position: absolute;
-    width: 12rem;
-    height: 31rem;
-    border: 1.5rem solid #ffca7c6b;
-    border-right: 0;
-    top: -6rem;
-    left: -1rem;
-} */
 h1{
     font-family: 'Poiret One';
     font-size: 8rem;
 }
-.main_content h3{
+.main_content h4{
     margin-top: 1rem;
     font-size: 3rem;
 }
@@ -134,178 +122,70 @@ h1{
     margin-left: 0;
 }
 
-/* о нас */
-.about_us{
-    position: relative;
-    /* min-height: 50rem; */
-    padding: 10rem 15rem;
-    background: url('https://img5.goodfon.ru/original/1280x1024/8/30/eustoma-tsvety-rozovyi-belyi.jpg') center center no-repeat;
-    background: url('https://img5.goodfon.ru/original/1600x1025/d/1c/belyi-fon-eustoma-buket.jpg');
-    background: url('https://img5.goodfon.ru/original/2880x1800/2/a4/pink-flowers-tsvety-eustoma.jpg') center center no-repeat;
-    /* background: url('https://img5.goodfon.ru/wallpaper/original/2/a4/pink-flowers-tsvety-eustoma.jpg'); */
-    background-size: cover;
-}
-/* .about_us:before{
-    content: '';
-    width: 100%;
-    height: 8rem;
-    position: absolute;
-    height: 50rem;
-    filter: blur(-2rem);
-    background: rgb(255 233 215 / 45%);
-} */
-/* .about_us:after{
-    content: '';
-    width: 100%;
-    height: 7rem;
-    position: absolute;
-    bottom: -4rem;
-    filter: blur(1.5rem);
-    background: #ffffff;
-} */
-
-.about_us_block{
-    /* margin: -15vh auto 0 auto; */
-    padding: 5rem;
-    /* width: 60%; */
-    /* min-height: 30rem; */
-    /* position: absolute; */
-    top: 10rem;
-    left: 15rem;
-    right: 15rem;
-
-    display: flex;
-    justify-content: space-between;
-
-    background: #FFF;
-    box-shadow: 0 0 30px 0 rgb(0 0 0 / 20%);
-    z-index: 3;
-}
-.individually_description{
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.individually_description img{
-    width: 20rem;
-    height: 20rem;
-    object-fit: cover;
-    border-radius: 50%;
-}
-.individually_description p{
-    padding-top: 3rem;
-    font-weight: bold;
-    font-size: 3.5rem;
-    color: #b15b84;
-}
-
 
 h3{
     font-weight: bold;
     font-size: 3rem;
+    color: rgb(195 102 136);
 }
+
+/* программа */
 .programm{
-    margin: 7rem auto 0 auto;
-    width: 70%;
-    position: relative;
+    /* margin-top: 7rem; */
+    padding: 5rem 0;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: #575656;
+    background-size: cover;
 }
-.programm:before{
-    content: ' ';
-    position: absolute;
-    width: 57%;
-    height: .5rem;
-    top: 1.2rem;
-    left: -15rem;
-    background: #eca6dd;
+.programm_main{
+    width: 68%;
+    display: flex;
+    justify-content: space-between;
 }
 .programm_block{
-    display: flex;
-    align-items: center;
-    padding-top: 5rem;
-}
-.programm_date{
-    margin-right: 2rem;
-}
-.programm_text{
-    margin-left: 2rem;
-}
-
-.programm_date p:last-child{
+    margin: 5rem 1.5rem;
     font-weight: bold;
-    font-size: 2.27rem;
-    color: #f17fd9;
-    /* color: #d383dc; */
+    text-align: center;
+    background: #ffffff;
+    box-shadow: 0 0 1rem 0 rgb(0 0 0 / 20%);
 }
-.programm_date p:first-child{
-    font-weight: bold;
-    font-size: 1rem;
-    color: #7c7c7c;
+.programm_block img{
+    width: 100%;
+    height: 18rem;
+    object-fit: cover;
 }
-.programm_text p:first-child{
-    font-size: 2.27rem;
-    color: #333333;
+.programm_block div{
+    padding: 3rem 4rem;
 }
-.programm_text  p:last-child{
-    font-weight: bold;
-    font-size: 1rem;
-    color: #333333;
+.programm_block h6{
+    font-size: 1.5rem;
+    color: #808080;
 }
-
-.programm_point{
-    width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
-    /* background: #f17fd9; */
-    background: #a7ca95;
-    position: relative;
-}
-.programm_point:after{
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: calc(50% - .035rem);
-    width: .07rem;
-    height: 7rem;
-    background: #7c7c7c7c;
+.programm_block p{
+    padding-top: 1rem;
+    font-size: 1.2rem;
+    line-height: 150%;
+    color: #a6a4a4;
 }
 
-
-.programm_block:first-child .programm_date{
-    color: #a2398de0;
-}
-.programm_block:first-child .programm_point{
-    background: #a2398de0;
-}
-.programm_block:last-child .programm_date{
-    color: #f3b8e6;
-}
-.programm_block:last-child .programm_point{
-    /* background: #f3b8e6; */
-    background: #afaba1;
-}
-.programm_block:last-child .programm_point:after{
-    display: none;
-}
 
 
 /* приглашение */
 .invitation{
-    margin: 7rem 0;
-    padding: 0 15rem;
-    height: 100vh;
+    /* margin: 7rem 0; */
+    padding: 11rem 15rem 7rem 15rem;
+    /* padding: 8rem 15rem; */
+    min-height: 100vh;
 
     font-weight: bold;
     color: #575656;
+      /* #7e8155 */
     text-align: center;
     
-    background: url('../img/flowers.jpg') center center no-repeat;
-    /* background: url('https://img5.goodfon.ru/original/1600x1025/d/1c/belyi-fon-eustoma-buket.jpg'); */
-    /* background: url('https://img5.goodfon.ru/original/2880x1800/2/a4/pink-flowers-tsvety-eustoma.jpg') center center no-repeat; */
+    background: url('../img/flowers.jpg') center 30% no-repeat;
     background-size: cover;
     box-shadow: 0 0 30px 0 rgb(0 0 0 / 20%);
     
@@ -318,12 +198,13 @@ h3{
     margin-top: 3rem;
     width: 50%;
     font-size: 1.5rem;
+    line-height: 130%;
 }
 .block_color{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    width: 40%;
+    width: 24rem;
     margin-top: 1.5rem;
 }
 .block_color div{
@@ -333,17 +214,27 @@ h3{
     margin: .5rem;
     border: .01rem solid #cacaca;
 }
+
+
 /* форма отправки */
+
 .form_data{
     display: flex;
     justify-content: center;
-    /* align-items: center; */
 
-    margin-bottom: 7rem;
+    margin-bottom: 4rem;
+    padding: 4rem;
+    background: url('../img/form_img.jpg') center center no-repeat;
+    background-size: cover;
+
     font-weight: bold;
     font-size: 1.2rem;
     line-height: 115%;
     color: #7c7c7c;
+}
+.form_data h3{
+    line-height: 120%;
+    color: #ffffff;
 }
 form{
     display: flex;
@@ -353,6 +244,7 @@ form{
 }
 .come_block{
     display: flex;
+    margin-top: 5rem;
 }
 .come_block input, .question input{
     width: 0;
@@ -364,12 +256,13 @@ form{
     padding: 1.2rem 0;
     text-align: center;
 
+    background: #ffffff;
     border: .07rem solid #7c7c7c6b;
-    transition: all .3s;
+    transition: color .2s;
 }
-.come_block input:checked + label{
+.come_block input:checked + label,
+.come_block label:hover{
     color: #ffffff;
-    border-color: #ffffff;
     background: linear-gradient(135deg, rgb(237, 216, 200), rgb(195 102 136) 100%);
 }
 .form_data button{
@@ -385,11 +278,10 @@ form{
 
     background: #ffffff;
     border: .07rem solid #7c7c7c6b;
-    transition: all .25s;
+    transition: color .25s;
 }
 .form_data button:hover{
     color: #ffffff;
-    border-color: #ffffff;
     background: linear-gradient(135deg, rgb(237, 216, 200), rgb(195 102 136) 100%);
 }
 
@@ -398,6 +290,9 @@ form{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+.question p{
+    color: #ffffff;
 }
 .question, .input_name{
     margin: 3rem 1rem 0 1rem;
@@ -410,7 +305,51 @@ form{
     font-weight: bold;
     font-size: 1.2rem;
     color: #7c7c7c;
-
-    /* border-radius: .5rem; */
     border: .07rem solid #7c7c7c6b;
+}
+textarea{
+    width: 70%;
+    height: 4rem;
+    margin-top: 3rem;
+    resize: none;
+
+    padding: 1rem 1.2rem;
+    font-family: 'Poiret One';
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #7c7c7c;
+    border: .07rem solid #7c7c7c6b;
+}
+textarea:focus{
+    outline: none;
+}
+.map{
+    text-align: center;
+}
+.map iframe{
+    margin: 3rem 0 1.5rem 0;
+    height: 65vh;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1.5rem 3rem;
+    font-size: 1.2rem;
+    line-height: 115%;
+    border-top: .07rem solid #7c7c7c6b;
+    background: #494949;
+}
+footer p{
+    color: #ffffff;
+}
+footer svg{
+    margin: 0 2rem;
+    width: 2rem;
+    height: 2rem;
+}
+footer a{
+    font-weight: bold;
+    color: rgb(255 149 140);
 }
