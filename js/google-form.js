@@ -15,6 +15,12 @@
           'application/xml, text/xml, */*; q=0.01');
       xhr.setRequestHeader('Content-type',
           'application/x-www-form-urlencoded; charset=UTF-8');
+
+      xhr.setRequestHeader('Access-Control-Allow-Origin',
+          '*');
+      xhr.setRequestHeader('Access-Control-Allow-Methods',
+          'GET,PUT,POST,DELETE,PATCH,OPTIONS');
+
       xhr.send(data);
     } catch(e) {}
 
